@@ -1,0 +1,217 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* desktop device css start here  */
+
+
+
+
+
+.common-wrap {
+    max-width: 1728px;
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+
+
+/* announcement bar css start here  */
+
+.announcement-bar__inner {
+    background-color: #DC4B33;
+    padding: 22px 6px;
+}
+
+.announcement-bar__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.announcement-bar__left p {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: capitalize;
+    line-height: 100%;
+    color: #F0F0F0;
+
+}
+
+.announcement-bar__left em {
+    font-style: normal;
+    text-transform: uppercase;
+
+}
+
+.announcement-bar__right select {
+
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    background-image: url(../images/white-down-arrow.svg);
+    cursor: pointer;
+    background-position: center right 0;
+    background-repeat: no-repeat;
+    background-size: 11px;
+    width: 100%;
+    padding: 0;
+    min-height: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #F0F0F0;
+
+
+}
+
+/* announcement bar css end here  */
+
+
+
+/*header section start here*/
+
+.header {
+    background-color: #222222;
+}
+
+.header__items {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__center ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+
+
+
+}
+
+.header__center ul li a {
+    color: #F0F0F0;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 100%;
+
+
+}
+
+.header__right {
+    display: flex;
+    gap: 25px;
+
+
+}
+
+.header__cart img {
+    height: 35px;
+    width: 35px;
+}
+
+.header__account img {
+
+    height: 35px;
+    width: 35px;
+}
+
+/*header section end here*/
+
+
+
+
+
+/*banner section start here*/
+.banner__inner {
+    background: linear-gradient(to bottom, #222222, #3B3B3B);
+}
+
+
+.banner__items {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+
+}
+
+.banner__left {
+    width: calc(100% - 674px);
+}
+
+.banner__content h2 {
+    font-size: 55px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #F0F0F0;
+    padding-bottom: 36px;
+}
+
+.banner__content p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 170%;
+    color: #F0F0F0;
+    padding-bottom: 36px;
+}
+
+.banner__right {
+    max-width: 584px;
+    padding: 121px 0 86px 0;
+
+}
+
+.banner__right img {
+    width: 100%;
+}
+
+.banner__button-wrap {
+    display: flex;
+    gap: 15px;
+}
+
+.banner__button-wrap .button-left {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #F0F0F0;
+    background-color: #DC4B33;
+    border-radius: 10px;
+    padding: 10px 33px;
+
+}
+
+
+.banner__button-wrap .button-right {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 100%;
+    color: #F0F0F0;
+    background-color: #DC4B33;
+    border-radius: 10px;
+    padding: 10px 33px;
+
+}
+
+.banner__button-wrap a {
+    color: #F0F0F0;
+}
+
+
+
+/*banner section end here*/
+
+
+
+
+
+
+
+
+
+
+/* desktop device css end here  */
