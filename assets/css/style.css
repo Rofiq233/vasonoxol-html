@@ -6,13 +6,130 @@ body {
 
 
 
-
+/* common css start here  */
 
 .common-wrap {
     max-width: 1728px;
     padding: 0 40px;
     margin: 0 auto;
 }
+
+.ptoduct-card__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 132px;
+    flex-wrap: wrap;
+}
+
+.ptoduct-card__item {
+    flex: 1 0 26%;
+
+}
+
+.ptoduct-card__item-img {
+    padding: 35px 32px;
+    box-shadow: 0px 7px 30px 0px #0000001A;
+    background: #F5F5F5;
+    margin-bottom: 26px;
+    position: relative;
+    border-radius: 15px;
+
+}
+
+.product-card__badge {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    background: #DC4B33;
+    color: #F0F0F0;
+    padding: 11px 31px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+
+.ptoduct-card__item h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    max-width: 340px;
+    margin: 0 auto 14px auto;
+    color: #3F3F3F;
+
+
+}
+
+.ptoduct-card__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 26px;
+}
+
+.ptoduct-card__price p,
+.ptoduct-card__price del {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #3F3F3F;
+
+}
+
+.ptoduct-card__price del {
+    font-weight: 400;
+}
+
+.product-card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 14px;
+}
+
+.product-card__btn a {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    background: #DC4B33;
+    color: #F0F0F0;
+    border-radius: 10px;
+}
+
+.product-card__btn a:first-child {
+    padding: 20px 62px;
+}
+
+.product-card__btn a:last-child {
+    padding: 12.5px 46px;
+}
+
+
+.product-card__primary-btn {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #F0F0F0;
+    padding: 20px;
+    background: #5A31F5;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+/* common css end here  */
+
+
 
 
 
@@ -62,6 +179,8 @@ body {
     line-height: 100%;
     letter-spacing: 0%;
     color: #F0F0F0;
+    font-family: "Montserrat", sans-serif;
+
 
 
 }
@@ -98,6 +217,7 @@ body {
     font-size: 21px;
     font-weight: 600;
     line-height: 100%;
+    font-family: "Montserrat", sans-serif;
 
 
 }
@@ -157,6 +277,7 @@ body {
     line-height: 170%;
     color: #F0F0F0;
     padding-bottom: 36px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .banner__right {
@@ -206,8 +327,59 @@ body {
 /*banner section end here*/
 
 
+/* featured collection start here  */
+
+.featured-collection__items {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    justify-content: space-between;
+}
 
 
+/* featured collection end here  */
+
+
+/* full width text css start here  */
+
+.full-width-text__inner {
+    background: linear-gradient(180deg, #DC4B33 0%, #A81800 100%);
+    padding: 55px 72px;
+
+}
+
+.full-width-text__wrapper p {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 170%;
+    text-align: center;
+    color: #F0F0F0;
+
+}
+
+
+/* full width text css end here  */
+
+
+/* trending product css start here  */
+
+
+.trending-product__inner {
+    padding: 69px 20px 164px 20px;
+}
+
+.trending-product__wrap h3 {
+    color: #DC4B33;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 69px;
+
+}
+
+/* trending product css end here  */
 
 
 
