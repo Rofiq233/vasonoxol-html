@@ -382,6 +382,9 @@ body {
 /* trending product css end here  */
 
 /* google review section css start here   */
+.google-review__inner {
+    margin-bottom: 196px;
+}
 
 .google-review__top {
     margin-bottom: 78px;
@@ -449,25 +452,107 @@ body {
     gap: 15px;
     margin-bottom: 27px;
 }
+
 .google-review__arrow-right,
-.google-review__arrow-left{
+.google-review__arrow-left {
     cursor: pointer;
 }
-.google-review__btn{
-font-weight: 600;
-font-size: 20px;
-line-height: 100%;
-text-align: center;
-color: #F0F0F0;
-background: #DC4B33;
-border-radius: 10px;
-padding: 20px 63px;
+
+.google-review__btn {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #F0F0F0;
+    background: #DC4B33;
+    border-radius: 10px;
+    padding: 20px 63px;
 
 
 }
+
 /* google review section css end here   */
 
+/* ingredients section css start here  */
+.ingredients__inner {
+    padding: 0 22px;
+    margin-bottom: 165px;
+}
 
+.ingredients__top {
+    max-width: 1273px;
+    margin: 0 auto;
+    margin-bottom: 68px;
+}
+
+.ingredients__top h3 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100%;
+    text-align: center;
+    color: #DC4B33;
+    margin-bottom: 37px;
+}
+
+.ingredients__top p {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    color: #8F8F8F;
+}
+
+.ingredients__top em {
+    font-weight: 700;
+    font-style: normal;
+    color: #DC4B33;
+}
+
+.ingredients__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 98px;
+    flex-wrap: wrap;
+}
+
+.ingredients__item {
+    flex: 1 0 45%;
+    box-shadow: 0px 0px 30px 0px #0000001A;
+    background: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 41px;
+
+}
+
+.ingredients__item p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 160%;
+    color: #5C5C5D;
+}
+
+.ingredients__item p em {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.ingredients__item-img {
+    max-width: 200px;
+    width: 100%;
+}
+
+.ingredients__item-content {
+    width: calc(100% - 241px);
+}
+
+.ingredients__item-img img {
+    width: 100%;
+}
+
+/* ingredients section css end here  */
 
 
 /* desktop device css end here  */
