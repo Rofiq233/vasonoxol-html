@@ -355,9 +355,26 @@ body {
     line-height: 170%;
     text-align: center;
     color: #F0F0F0;
-
 }
 
+.full-width-text__btn-wrap {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.full-width-text__btn {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    padding: 18px 96px;
+    background: linear-gradient(90deg, #222222 0%, #3B3B3B 100%);
+    border-radius: 10px;
+    color: #F0F0F0;
+
+
+}
 
 /* full width text css end here  */
 
@@ -553,6 +570,249 @@ body {
 }
 
 /* ingredients section css end here  */
+
+
+/* package section css start here  */
+
+.package__top {
+    margin-bottom: 101px;
+}
+
+.package__top h3 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100%;
+    text-align: center;
+    color: #DC4B33;
+}
+
+
+/* package section css end here  */
+
+
+
+
+/* benefits section css start here  */
+
+
+.benefits__inner {
+    max-width: 1217px;
+    margin: 0 auto;
+    margin-top: 126px;
+}
+
+.benefits__top {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.benefits__top h3 {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 150%;
+    text-align: center;
+    color: #DC4B33;
+
+}
+
+.benefits__top p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 199%;
+    text-align: center;
+    color: #3F3F3F;
+}
+
+.benefits__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 149px;
+}
+
+.benefits__item-img-wrap {
+    text-align: center;
+    max-width: 210px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.benefits__item {
+    padding: 190px 32px 38px 32px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 50px 0px #0000001A;
+    position: relative;
+
+}
+
+.benefits__inner-item ul {
+    background-color: #3F3F3F;
+    padding: 21px;
+}
+
+/* benefits section css end here  */
+
+/* health section css start here  */
+.health__inner {
+    margin-bottom: 164px;
+}
+
+.health__top {
+    max-width: 848px;
+    margin: 0 auto 106px auto;
+}
+
+.health__top h3 {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DC4B33;
+}
+
+.health__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 59px;
+}
+
+.health__right {
+    max-width: 694px;
+    width: 100%;
+}
+
+.health__right img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.health__left h4 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #5C5C5D;
+}
+
+.health__left p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+    color: #5C5C5D;
+    margin-bottom: 40px;
+}
+
+.health__left p:last-child {
+    margin-bottom: 0px;
+}
+
+.health__left-btn {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #F0F0F0;
+    padding: 20px 72px;
+    border-radius: 10px;
+    background-color: #DC4B33;
+
+}
+
+/* health section css end here  */
+
+
+
+/* faq section css start here  */
+
+.faq__inner{
+    margin-bottom: 236px;
+}
+
+
+.faq__top {
+    margin-bottom: 67px;
+}
+
+.faq__top h3 {
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DC4B33;
+}
+
+.faq__top p {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #5C5C5D;
+}
+
+.faq__content {
+    max-width: 1342px;
+    margin: 0 auto;
+}
+.faq__item{
+    margin-bottom: 42px;
+}
+.faq__item:last-child{
+    margin-bottom: 0;
+}
+.faq__title {
+    background: #FFFAE7;
+    box-shadow: 0px 6px 30px 0px #0000001A;
+    padding: 38px 51px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 140%;
+    color: #8F8F8F;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq__title::after {
+    content: url(../images/faq-arrow.svg);
+    line-height: 0;
+    transition: .4s;
+
+}
+.faq__title.active::after {
+    transform: rotate(180deg);
+}
+.faq__item-content {
+    background-color: #fff;
+    box-shadow: 0px 6px 30px 0px #0000001A;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #8F8F8F;
+    padding: 56px 51px 40px 51px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: -15px;
+    z-index: -1;
+    position: relative;
+}
+.faq__item-content{
+    display: none;
+}
+.faq__item-content:first-of-type {
+  display: block;
+}
+
+/* faq section css end here  */
+
 
 
 /* desktop device css end here  */
