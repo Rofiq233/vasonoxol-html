@@ -161,25 +161,30 @@ body {
 
 }
 
+select.announcement-bar__select {
+    
+}
+
 .announcement-bar__right select {
 
     text-transform: uppercase;
-    background-color: transparent;
     border: none;
     background-image: url(../images/white-down-arrow.svg);
     cursor: pointer;
     background-position: center right 0;
     background-repeat: no-repeat;
-    background-size: 11px;
+    background-size: 40px;
     width: 100%;
     padding: 0;
     min-height: 0;
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: 0%;
     color: #F0F0F0;
-    font-family: "Montserrat", sans-serif;
+    background-color: rgb(220, 75, 51);
+    padding: 5px 40px 5px 10px;
+    border-radius: 5px;
+    border: none;
 
 
 
@@ -197,19 +202,29 @@ body {
 
 .header__items {
     display: flex;
-    gap: 50px;
+    gap: 46px;
     align-items: center;
     justify-content: space-between;
+    padding: 22px 0;
+}
+.header__left{
+    max-width: 239px;
+    width: 100%;
+}
+
+.header__left img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.header__center{
+    width: calc(100% - 421px);
 }
 
 .header__center ul {
     display: flex;
     gap: 50px;
     align-items: center;
-
-
-
-
 }
 
 .header__center ul li a {
@@ -256,6 +271,7 @@ body {
     display: flex;
     gap: 90px;
     align-items: center;
+    padding: 0 78px;
 
 }
 
@@ -265,7 +281,7 @@ body {
 
 .banner__content h2 {
     font-size: 55px;
-    line-height: 100%;
+    line-height: 110%;
     font-weight: 700;
     color: #F0F0F0;
     padding-bottom: 36px;
@@ -729,8 +745,8 @@ body {
 
 /* faq section css start here  */
 
-.faq__inner{
-    margin-bottom: 236px;
+.faq__inner {
+    margin-bottom: 385px;
 }
 
 
@@ -760,12 +776,15 @@ body {
     max-width: 1342px;
     margin: 0 auto;
 }
-.faq__item{
+
+.faq__item {
     margin-bottom: 42px;
 }
-.faq__item:last-child{
+
+.faq__item:last-child {
     margin-bottom: 0;
 }
+
 .faq__title {
     background: #FFFAE7;
     box-shadow: 0px 6px 30px 0px #0000001A;
@@ -787,9 +806,11 @@ body {
     transition: .4s;
 
 }
+
 .faq__title.active::after {
     transform: rotate(180deg);
 }
+
 .faq__item-content {
     background-color: #fff;
     box-shadow: 0px 6px 30px 0px #0000001A;
@@ -804,15 +825,125 @@ body {
     z-index: -1;
     position: relative;
 }
-.faq__item-content{
+
+.faq__item-content {
     display: none;
 }
+
 .faq__item-content:first-of-type {
-  display: block;
+    display: block;
 }
 
 /* faq section css end here  */
 
+/* footer section css start here  */
+.footer__inner {
+    padding: 221px 0;
+    background: #222222;
+    position: relative;
+
+}
+
+.footer_subscription {
+    max-width: 1323px;
+    margin: 0 auto;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 50px 153px;
+    position: absolute;
+    top: -160px;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer_subscription h3 {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DC4B33;
+}
+
+.footer_subscription p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 160%;
+    color: #8F8F8F;
+    text-align: center;
+    margin-bottom: 36px;
+
+}
+
+.footer__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 37px;
+}
+
+.footer__input input {
+    max-width: 750px;
+    margin: 0 auto;
+    width: 100%;
+    border: 2px solid #BFBFBF;
+    background-color: transparent;
+    padding: 20px 34px;
+    border-radius: 10px;
+}
+
+.footer__input button {
+    width: calc(100% - 787px);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    text-align: center;
+    color: #F0F0F0;
+    background-color: #DC4B33;
+    border-radius: 10px;
+    padding: 20px 55px;
+    border: none;
+
+}
+
+.footer__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 65px;
+}
+
+.footer__item {
+    flex: 1 0 20%;
+}
+
+.footer__item h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 140%;
+    color: #DC4B33;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+
+.footer__item p,
+.footer__item li a{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #BFBFBF;
+    text-align: justify;
+
+}
+.footer__item li{
+   margin-bottom: 11px;
+
+}
+.footer__item li:last-of-type{
+   margin-bottom: 0;
+
+}
+/* footer section css end here  */
 
 
 /* desktop device css end here  */
