@@ -161,9 +161,7 @@ body {
 
 }
 
-select.announcement-bar__select {
-    
-}
+select.announcement-bar__select {}
 
 .announcement-bar__right select {
 
@@ -207,17 +205,18 @@ select.announcement-bar__select {
     justify-content: space-between;
     padding: 22px 0;
 }
-.header__left{
+
+.header__left {
     max-width: 239px;
     width: 100%;
 }
 
-.header__left img{
+.header__left img {
     object-fit: cover;
     width: 100%;
 }
 
-.header__center{
+.header__center {
     width: calc(100% - 421px);
 }
 
@@ -244,6 +243,27 @@ select.announcement-bar__select {
 
 }
 
+.header__cart {
+    position: relative;
+}
+
+.header__cart span {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background-color: #DC4B33;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #F0F0F0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .header__cart img {
     height: 35px;
     width: 35px;
@@ -253,6 +273,10 @@ select.announcement-bar__select {
 
     height: 35px;
     width: 35px;
+}
+
+.header__mobi-menu {
+    display: none;
 }
 
 /*header section end here*/
@@ -311,32 +335,25 @@ select.announcement-bar__select {
     gap: 15px;
 }
 
-.banner__button-wrap .button-left {
+.banner__btn {
     font-size: 24px;
     font-weight: 600;
     line-height: 100%;
     color: #F0F0F0;
-    background-color: #DC4B33;
     border-radius: 10px;
-    padding: 10px 33px;
+    padding: 18px 43px;
+}
 
+.banner__button-left {
+    background-color: #5A31F5;
 }
 
 
-.banner__button-wrap .button-right {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 100%;
-    color: #F0F0F0;
+.banner__button-right {
     background-color: #DC4B33;
-    border-radius: 10px;
-    padding: 10px 33px;
-
 }
 
-.banner__button-wrap a {
-    color: #F0F0F0;
-}
+
 
 
 
@@ -927,7 +944,7 @@ select.announcement-bar__select {
 }
 
 .footer__item p,
-.footer__item li a{
+.footer__item li a {
     font-weight: 500;
     font-size: 24px;
     line-height: 140%;
@@ -935,15 +952,393 @@ select.announcement-bar__select {
     text-align: justify;
 
 }
-.footer__item li{
-   margin-bottom: 11px;
+
+.footer__item li {
+    margin-bottom: 11px;
 
 }
-.footer__item li:last-of-type{
-   margin-bottom: 0;
+
+.footer__item li:last-of-type {
+    margin-bottom: 0;
 
 }
+
 /* footer section css end here  */
 
 
 /* desktop device css end here  */
+
+
+
+
+
+
+
+/* mobile device css start here */
+
+@media(max-width:768px) {
+    .common-wrap {
+        width: 100%;
+        padding: 0 20px;
+        max-width: inherit;
+    }
+
+    .announcement-bar__inner {
+        padding: 13px 0;
+    }
+
+    .announcement-bar__wrap {
+        align-items: start;
+    }
+
+    .announcement-bar__left p,
+    .announcement-bar__right select {
+        font-size: 10px;
+    }
+
+    .announcement-bar__right select {
+        background-size: 20px;
+        padding: 5px 23px 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .announcement-bar__left {
+        width: 190px;
+    }
+
+    .header__mobi-menu {
+        display: block;
+    }
+
+    .header__center {
+        display: none;
+    }
+
+    .header__left {
+        max-width: 126px;
+    }
+
+    .header__items {
+        padding: 12px 0;
+
+    }
+
+    .header__right {
+        gap: 23px;
+    }
+
+    .header__cart img,
+    .header__account img {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .header__mobi-menu div {
+        height: 2px;
+        border-radius: 2px;
+        background: #FFF;
+        margin: 4px auto;
+        transition: all .55s cubic-bezier(.075, .82, .165, 1);
+        width: 22px;
+    }
+
+    .banner__inner {
+        padding: 38px 0 49px 0;
+    }
+
+    .banner__items {
+
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 19px;
+    }
+
+    .banner__right {
+        padding: 38px 0 20px 0;
+    }
+
+    .banner__right img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .banner__left {
+        width: 100%;
+    }
+
+    .banner__content h2 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 13px;
+        padding: 0;
+
+    }
+
+    .banner__content p {
+        font-size: 14px;
+        line-height: 170%;
+    }
+
+
+    .banner__btn {
+        font-size: 12px;
+        flex: 1 0 45%;
+        padding: 18px 0;
+        text-align: center;
+    }
+
+
+    .full-width-text__inner {
+        padding: 20px 0;
+    }
+
+    .full-width-text__wrapper p {
+        font-size: 12px;
+    }
+
+    .full-width-text__btn {
+        width: 100%;
+        font-size: 12px;
+        padding: 12px 0;
+    }
+
+
+    /* trending section css start here  */
+    .trending-product__inner {
+        padding: 40px 0 54px 0;
+    }
+
+    .trending-product__wrap h3 {
+        font-size: 24px;
+        margin-bottom: 41px;
+    }
+
+    .product-card__badge {
+        font-size: 10px;
+    }
+
+    .product-card__badge {
+
+        font-size: 10px;
+        padding: 10px 17px;
+    }
+
+    .ptoduct-card__item-img {
+        margin-bottom: 20px;
+    }
+
+    .ptoduct-card__price p,
+    .ptoduct-card__price del {
+        font-size: 20px;
+    }
+
+    .ptoduct-card__items {
+        gap: 83px;
+    }
+
+    .product-card__btn {
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .product-card__btn a:first-child {
+        width: calc(100% - 78px);
+        padding: 12px 0;
+        font-size: 12px;
+    }
+
+    .product-card__btn a:last-child {
+        max-width: 63px;
+        padding: 8px 22px;
+    }
+
+    .product-card__primary-btn {
+        font-size: 12px;
+        padding: 12px 0;
+    }
+
+    /* trending section css end here  */
+
+
+
+    /* google review section css start here  */
+    .google-review__inner {
+        margin-bottom: 79px;
+    }
+
+    .google-review__top p {
+
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    .google-review__top h3 {
+
+        font-size: 28px;
+    }
+
+    .google-review__content {
+        padding: 30px 10px;
+    }
+
+    .google-review__item p,
+    .google-review__item h5 {
+        font-size: 18px;
+    }
+
+    .google-review__btn {
+        font-size: 17px;
+        padding: 13px 63px;
+    }
+
+    /* google review section css end here  */
+
+
+    /* ingredient section css start here  */
+
+    .ingredients__inner {
+        padding: 0;
+        margin-bottom: 46px;
+    }
+
+    .ingredients__top {
+        margin-bottom: 33px;
+    }
+
+    .ingredients__top h3 {
+        font-size: 24px;
+        margin-bottom: 23px;
+    }
+
+    .ingredients__top p {
+        font-size: 16px;
+
+    }
+
+    .ingredients__items {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .ingredients__item-img {
+        max-width: 118px;
+
+    }
+
+    .ingredients__item p {
+        font-size: 12px;
+    }
+
+    .ingredients__item {
+        gap: 21px;
+        padding: 15px 5px;
+    }
+
+    .ingredients__item-content {
+        width: calc(100% - 139px);
+    }
+
+    /* ingredient section css end here  */
+
+    /* health section css start here  */
+
+    .health__inner {
+        margin: 70px 0;
+
+    }
+
+    .health__top {
+        /* max-width: 848px; */
+        margin-bottom: 30px;
+    }
+
+    .health__top h3 {
+        font-size: 25px;
+        line-height: 130%;
+    }
+
+    .health__content {
+
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+
+    .health__left h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .health__left p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .health__left-btn {
+        font-size: 12px;
+        padding: 12px 0;
+        width: 100%;
+    }
+
+    /* health section css end here  */
+
+
+
+    /* faq section css start here  */
+
+    .faq__top h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .faq__top {
+        margin-bottom: 40px;
+    }
+
+    .faq__top p {
+        font-size: 18px;
+    }
+
+    .faq__item {
+        margin-bottom: 25px;
+    }
+
+    .faq__title {
+        background: #FFFAE7;
+        padding: 20px 10px;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .faq__title::after {
+        content: "";
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url(../images/faq-arrow.svg);
+        transition: .4s;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 0px;
+        object-fit: cover;
+        position: absolute;
+        top: 22px;
+        right: 5px;
+    }
+
+    .faq__item-content {
+
+        font-size: 16px;
+        padding: 40px 10px 29px 10px;
+
+    }
+
+    /* faq section css end here  */
+
+
+}
+
+
+/* mobile device css end here */
