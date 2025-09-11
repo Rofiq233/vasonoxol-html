@@ -34,3 +34,24 @@ $(document).ready(function () {
     }
   });
 });
+
+
+
+ $('.product__left-big-items').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.product__left-small-items',
+  dots:false
+});
+$('.product__left-small-items').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.product__left-big-items',
+  dots: false,
+  // centerMode: true,
+  focusOnSelect: true,
+  arrows:false
+});
+	
