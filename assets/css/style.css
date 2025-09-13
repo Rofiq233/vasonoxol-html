@@ -1619,6 +1619,9 @@ select.announcement-bar__select {}
 
 
     /* faq section css start here  */
+    .faq__inner {
+        margin-bottom: 285px;
+    }
 
     .faq__top h3 {
         font-size: 25px;
@@ -1668,6 +1671,61 @@ select.announcement-bar__select {}
     }
 
     /* faq section css end here  */
+
+
+    /* footer section css start here  */
+.footer__inner{
+    padding: 221px 0 100px 0;
+}
+    .footer_subscription {
+        padding: 50px 15px;
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    .footer_subscription h3 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .footer_subscription p {
+        font-size: 18px;
+    }
+
+    .footer__input {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .footer__input input {
+        padding: 15px;
+    }
+
+    .footer__input button {
+        width: 100%;
+        font-size: 13px;
+        padding: 13px 0;
+    }
+
+    .footer__items {
+        flex-direction: column;
+    }
+
+    .footer__items {
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .footer__item h3 {
+        font-size: 25px;
+    }
+    .footer__item p, .footer__item li a{
+        font-size: 18px;
+    }
+
+    /* footer section css end here  */
+
 
 
 }
