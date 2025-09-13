@@ -721,11 +721,13 @@ select.announcement-bar__select {}
     max-width: 1217px;
     margin: 0 auto;
     margin-top: 126px;
+    margin-bottom: 109px;
 }
 
 .benefits__top {
     max-width: 1290px;
     margin: 0 auto;
+    margin-bottom: 80px;
 }
 
 .benefits__top h3 {
@@ -756,22 +758,44 @@ select.announcement-bar__select {}
     text-align: center;
     max-width: 210px;
     position: absolute;
-    top: 0;
+    top: 34px;
     left: 50%;
+    max-height: 175px;
     transform: translate(-50%);
+    height: 100%;
+}
+
+.benefits__item-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .benefits__item {
-    padding: 190px 32px 38px 32px;
+    padding: 141px 32px 38px 32px;
     background: #F5F5F5;
     box-shadow: 0px 4px 50px 0px #0000001A;
     position: relative;
-
 }
 
 .benefits__inner-item ul {
     background-color: #3F3F3F;
-    padding: 21px;
+    padding: 91px 32px 60px 45px;
+    border-radius: 10px;
+}
+
+.benefits__inner-item ul li {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 156%;
+    color: #F0F0F0;
+    margin-bottom: 10px;
+    list-style: disc;
+    /* padding: 0 32px; */
+}
+
+.benefits__inner-item ul li:last-child {
+    margin-bottom: 0;
 }
 
 /* benefits section css end here  */
@@ -1294,6 +1318,64 @@ select.announcement-bar__select {}
 
 
     /* popular section css end here      */
+
+
+
+    /* benefit section css start here  */
+
+    .benefits__inner {
+        margin: 80px 0;
+    }
+
+    .benefits__items {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .benefits__top h3 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .benefits__top p {
+        font-size: 18px;
+        line-height: 150%;
+
+    }
+
+    .benefits__top {
+        margin-bottom: 50px;
+    }
+
+    .benefits__item {
+        padding: 141px 14px 38px 14px;
+    }
+
+    .benefits__inner-item ul li {
+        font-size: 14px;
+        line-height: 140%;
+        margin-bottom: 15px;
+    }
+
+    .benefits__inner-item ul {
+        padding: 91px 32px 40px 45px;
+    }
+
+    /* benefit section css end here  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /* featured collection section css start here  */
 
